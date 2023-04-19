@@ -1,0 +1,66 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body, .keys{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.keys{
+    position: relative;
+    background: linear-gradient(to right, rgba(0,0,0,0.8), rgba(0,0,0,0.9)),url(drumBackground.jpg);
+}
+
+.keys div{
+    cursor: pointer;
+    color: #fff;
+    margin: 0 50px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: rgba(255,255,255,0.1);
+    border: 1px solid grey;
+    width: 80px;
+    height: auto;
+    transition: all 0.07s;
+}
+
+.keys span, kbd{
+    width: 100%;
+}
+.keys span{
+    color: rgb(125, 106, 49);
+    font-size: 15px;
+    text-transform: uppercase;
+}
+.keys kbd{
+    color: #fff;
+    font-weight: bold;
+    font-size: 2.3rem;
+    margin-bottom: 5px;
+}
+.keys .playing{
+    transform: scaleX(1.2) scaleY(1.1);
+    border: 2px solid rgb(255, 174, 0);
+    box-shadow: 0 0 10px 3px rgb(255, 174, 0);
+    padding: 10px 15px;
+}
+#headings{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: block;
+    flex-direction: row;
+    background-color: none;
+    border: none;
+}
+#headings h1{
+    width: 100%;
+    color: yellowgreen;
+}
